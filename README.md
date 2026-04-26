@@ -1,33 +1,40 @@
-# Utsah Singh - Portfolio
+# 🚀 Utsah Singh - Personal Portfolio
 
-A fully containerized frontend portfolio application showcasing projects, skills, and experience.
+![Docker](https://img.shields.io/badge/Docker-Enabled-blue?logo=docker&style=for-the-badge)
+![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
 
-## Project Overview
+A modern, fully containerized frontend portfolio application showcasing my projects, skills, and professional experience.
 
-This is a personal portfolio website built with HTML, CSS, and Vanilla JavaScript. It features interactive 3D cards, a typing hero section, real-time GitHub stats integration, and responsive design. The project has been Dockerized to allow easy and consistent deployment across different environments.
+## ✨ Features
 
-## Repository Structure
+- **Interactive UI**: Engaging 3D hover effects on project cards.
+- **Dynamic Content**: Typing animations in the hero section.
+- **Live Integrations**: Real-time GitHub stats integration.
+- **Responsive Design**: Fully optimized for mobile, tablet, and desktop viewing.
+- **Dockerized**: Easily deployable anywhere using Docker and NGINX.
 
-```
+## 📂 Repository Structure
+
+```text
 ├── assets/                 # Images and media assets
 ├── css/                    # Stylesheets
-├── js/                     # JavaScript files
+├── js/                     # JavaScript logic and animations
 ├── screenshots/            # Evidence of Docker execution
-├── Dockerfile              # Docker configuration
-├── .dockerignore           # Excluded files for Docker
+├── Dockerfile              # Docker NGINX configuration
+├── .dockerignore           # Excluded files for Docker build
 ├── .gitignore              # Excluded files for Git
-├── index.html              # Main HTML file
-├── style.css               # Additional styles
-├── script.js               # Additional scripts
+├── index.html              # Main HTML structure
 └── README.md               # Project documentation
 ```
 
-## Prerequisites
+## 🛠️ Prerequisites
 
 - [Docker](https://docs.docker.com/get-docker/) installed and running.
 - [Git](https://git-scm.com/) installed (for cloning and version control).
 
-## Docker Instructions
+## 🐳 Docker Instructions
 
 ### 1. Build the Docker Image
 
@@ -41,7 +48,7 @@ docker build -t utsah-portfolio .
 
 ### 2. Run the Container
 
-Once built, start the container using the image. We map port 8080 on the host to port 80 inside the container.
+Once built, start the container using the image. We map port `8080` on the host to port `80` inside the container.
 
 ```bash
 docker run -d -p 8080:80 --name portfolio-container utsah-portfolio
@@ -58,16 +65,20 @@ docker ps
 ### 3. View the App
 
 Open your browser and navigate to:
-[http://localhost:8080](http://localhost:8080)
+👉 [http://localhost:8080](http://localhost:8080)
 
 ![Running Container in Browser](screenshots/running-container.png)
 
-## Local Run Steps (Without Docker)
+## 💻 Local Run Steps (Without Docker)
 
 If you prefer to run the application locally without Docker:
 1. Clone the repository.
-2. Open `index.html` in any modern web browser or serve it using a local development server like VS Code Live Server or Python's `http.server`:
+2. Open `index.html` in any modern web browser.
+3. Alternatively, serve it using a local development server like VS Code Live Server or Python's `http.server`:
    ```bash
    python -m http.server 8000
    ```
-3. Navigate to `http://localhost:8000`.
+   Then navigate to `http://localhost:8000`.
+
+---
+*Built with ❤️ by Utsah Singh*
