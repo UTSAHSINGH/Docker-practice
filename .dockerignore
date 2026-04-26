@@ -1,0 +1,25 @@
+# Ignore git files
+.git
+.gitignore
+
+# Ignore node_modules if they exist
+node_modules/
+npm-debug.log
+
+# Ignore VS Code settings
+.vscode/
+*.code-workspace
+
+# Ignore MacOS files
+.DS_Store
+
+# Ignore Gemini
+.gemini/
+
+# Ignore Docker related
+Dockerfile
+.dockerignore
+docker-compose.yml
+
+# Screenshots
+screenshots/
