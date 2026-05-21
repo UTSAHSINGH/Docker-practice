@@ -81,4 +81,92 @@ If you prefer to run the application locally without Docker:
    Then navigate to `http://localhost:8000`.
 
 ---
+# BigData Notes – AWS Cloud Website Deployment
+
+## Project Overview
+This project demonstrates the deployment of a static website on AWS Cloud using Amazon S3 Static Website Hosting.
+
+The website "BigData Notes" is designed using HTML, CSS, and JavaScript and is publicly accessible through a live AWS-hosted URL.
+
+---
+
+## Live Website Link
+http://bigdata-notes.s3-website-us-east-1.amazonaws.com
+
+---
+
+## Technologies Used
+- HTML5
+- CSS3
+- JavaScript
+- AWS S3
+- AWS Static Website Hosting
+
+---
+
+## AWS Services Used
+- Amazon S3
+- S3 Bucket Policy
+- Static Website Hosting
+
+---
+
+## Features
+- Responsive user interface
+- Static website hosting on AWS
+- Publicly accessible live website
+- Cloud-based deployment
+
+---
+
+## Steps Performed
+
+### 1. Created AWS Account
+An AWS account was created and configured for cloud deployment.
+
+### 2. Created S3 Bucket
+An S3 bucket named:
+
+bigdata-notes
+
+was created in the region:
+
+US East (N. Virginia) – us-east-1
+
+### 3. Disabled Block Public Access
+Public access settings were modified to allow website hosting.
+
+### 4. Uploaded Website Files
+The following files were uploaded to the S3 bucket:
+- index.html
+- style.css
+- script.js
+- images/
+
+### 5. Enabled Static Website Hosting
+Static website hosting was enabled from the bucket properties.
+
+### 6. Added Bucket Policy
+A bucket policy was configured to allow public read access.
+
+### 7. Accessed Live Website
+The website was successfully deployed and tested using the S3 website endpoint.
+
+---
+
+## Bucket Policy Used
+
+```json
+{
+  "Version":"2012-10-17",
+  "Statement":[
+    {
+      "Sid":"PublicReadGetObject",
+      "Effect":"Allow",
+      "Principal":"*",
+      "Action":["s3:GetObject"],
+      "Resource":["arn:aws:s3:::bigdata-notes/*"]
+    }
+  ]
+}
 *Built with ❤️ by Utsah Singh*
